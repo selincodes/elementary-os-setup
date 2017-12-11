@@ -135,6 +135,27 @@ sudo apt update
 sudo apt install telegram
 ```
 
+#### 19. Install Avocode
+> More info https://help.avocode.com/app-settings/installing-avocode-on-linux
+```
+echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list
+sudo apt update
+sudo apt install avocode
+```
+
+#### 20. Install Photoshop
+> Download and install CrossOver
+```
+http://nnm-club.name/forum/viewtopic.php?t=1150815
+```
+> Download Photoshop
+```
+http://nnm-club.name/forum/viewtopic.php?t=1139590
+```
+> Restore with CrossOver
+```
+Bottle -> Import bottle archive
+```
 
 
 
