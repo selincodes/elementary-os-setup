@@ -157,6 +157,11 @@ http://nnm-club.name/forum/viewtopic.php?t=1139590
 Bottle -> Import bottle archive
 ```
 
+#### 21. Install Atom
+```
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt update && sudo apt install atom
+```
 
 
 
@@ -168,8 +173,7 @@ sudo add-apt-repository --remove ppa:whatever/ppa
 ```
 #### Remove apps
 ```
-sudo apt purge _name_
-sudo apt remove _name_
+sudo apt remove --purge _name_
 sudo apt autoremove && sudo apt autoclean
 ```
 
