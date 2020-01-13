@@ -12,7 +12,7 @@ sudo apt install software-properties-gtk
 sudo software-properties-gtk
 ```
 
-#### 2. Install TP-Link driver
+#### 3. Install TP-Link driver
 ```
 sudo apt install git dkms
 git clone https://github.com/jeremyb31/rtl8812au-1.git
@@ -20,7 +20,7 @@ cd rtl8812au-1
 sudo ./dkms-install.sh
 ```
 
-#### 3. Install elementary Tweaks
+#### 4. Install elementary Tweaks
 ```
 sudo add-apt-repository ppa:philip.scott/elementary-tweaks
 sudo apt update
@@ -28,18 +28,18 @@ sudo apt install elementary-tweaks
 ```
 ![alt text](https://pp.userapi.com/c840732/v840732340/2d76c/xFY6lL-y0N0.jpg "Elementary Tweaks")
 
-#### 4. Install TLP to save battery and prevent overheating
+#### 5. Install TLP to save battery and prevent overheating
 ```
 sudo apt install tlp tlp-rdw
 sudo tlp start
 ```
 
-#### 5. Install Firefox
+#### 6. Install Firefox
 ```
 sudo apt install firefox
 ```
 
-#### 6. Install Chromium
+#### 7. Install Chromium
 ```
 sudo apt install -y chromium-browser
 ````
@@ -50,64 +50,101 @@ sudo apt install -y pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 ```
 
-#### 7. Install VLC
+#### 8. Install VLC
 ```
 sudo apt install vlc
 ```
 
-#### 8. Install Filezilla
+#### 9. Install Filezilla
 ```
 sudo apt install filezilla
 ```
 
-#### 9. Install Ubuntu Restricted extras
+#### 10. Install Ubuntu Restricted extras
 > mp3, avi, mpeg, TrueType, Java, Flash, Codecs
 ```
 sudo apt install ubuntu-restricted-extras
 ```
 
-#### 10. Install Gimp
+#### 11. Install Gimp
 ```
 sudo apt install gimp
 ```
 
-#### 11. Install inkscape
+#### 12. Install inkscape
 ```
 sudo apt install inkscape
 ```
 
-#### 12. Install Sublime Text
-> 3154 change to version number
+#### 13. Install Sublime Text
+> 3207 change to version number
 ```
-wget https://download.sublimetext.com/sublime-text_build-3154_amd64.deb
 cd ~/Downloads
-sudo dpkg -i sublime-text_build-3154_amd64.deb
+wget https://download.sublimetext.com/sublime-text_build-3207_amd64.deb
+sudo dpkg -i sublime-text_build-3207_amd64.deb
 ```
-> License for 3154
+> Added these lines into sudo gedit /etc/hosts
+```
+127.0.0.1       www.sublimetext.com
+127.0.0.1       license.sublimehq.com
+```
+> License for 3207
 ```
 ----- BEGIN LICENSE -----
-eldon
+Member J2TeaM
 Single User License
-EA7E-1122628
-C0360740 20724B8A 30420C09 6D7E046F
-3F5D5FBB 17EF95DA 2BA7BB27 CCB14947
-27A316BE 8BCF4BC0 252FB8FF FD97DF71
-B11A1DA9 F7119CA0 31984BB9 7D71700C
-2C728BF8 B952E5F5 B941FF64 6D7979DA
-B8EB32F8 8D415F8E F16FE657 A35381CC
-290E2905 96E81236 63D2B06D E5F01A69
-84174B79 7C467714 641A9013 94CA7162
+EA7E-1011316
+D7DA350E 1B8B0760 972F8B60 F3E64036
+B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
+FA0A2ABE 25F65BD8 D51458E5 3923CE80
+87428428 79079A01 AA69F319 A1AF29A4
+A684C2DC 0B1583D4 19CBD290 217618CD
+5653E0A0 BACE3948 BB2EE45E 422D2C87
+DD9AF44B 99C49590 D2DBDEE1 75860FD2
+8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
 ------ END LICENSE ------
 ```
+> Sublime text 3 packages
+```
+A File Icon
+AutoFileName
+Dracula Color Scheme
+Emmet
+Sass
+SideBarEnhancements
+M3U
+Djaneiro
+requirementstxt
+SublimeLinter
+GitGutter
+```
+> Sublime text 3 settings
+```
+{
+	"update_check": false,
+	"auto_complete": false,
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"font_face": "Roboto Mono Medium",
+	"font_size": 11,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"menu_visible": true,
+	"theme": "Adaptive.sublime-theme",
+	"word_wrap": true
+}
+```
 
-#### 13. Install Eddy
+#### 14. Install Eddy
 > A debian package installer for elementary OS
 
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.donadigo.eddy)
 ![alt text](https://pp.userapi.com/c840732/v840732112/2c401/p0OyT-G4aiQ.jpg "Eddy")
 
-#### 14. Install Node.js
+#### 15. Install Node.js
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt update
@@ -115,18 +152,18 @@ sudo apt install -y nodejs
 nodejs -v && npm -v
 ```
 
-#### 15. Install Git, Gulp
+#### 16. Install Git, Gulp
 ```
 sudo apt install git
 sudo npm install --global gulp
 ```
 
-#### 16. Install qbittorrent
+#### 17. Install qbittorrent
 ```
 sudo apt install qbittorrent
 ```
 
-#### 17. Install MS Fonts
+#### 18. Install MS Fonts
 ```
 sudo apt install ttf-mscorefonts-installer
 cd /tmp && wget http://www.stchman.com/tools/MS_fonts/tahoma.zip
@@ -134,7 +171,7 @@ sudo unzip -d /usr/share/fonts/truetype/msttcorefonts /tmp/tahoma.zip
 fc-cache -fv
 ```
 
-#### 18. Install Viber and Telegram
+#### 19. Install Viber and Telegram
 ```
 http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
 
@@ -143,7 +180,7 @@ sudo apt update
 sudo apt install telegram
 ```
 
-#### 19. Install Avocode
+#### 20. Install Avocode
 > More info https://help.avocode.com/app-settings/installing-avocode-on-linux
 ```
 echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list
@@ -151,7 +188,7 @@ sudo apt update
 sudo apt install avocode
 ```
 
-#### 20. Install Photoshop
+#### 21. Install Photoshop
 > Download and install CrossOver
 ```
 http://nnm-club.name/forum/viewtopic.php?t=1150815
@@ -165,7 +202,7 @@ http://nnm-club.name/forum/viewtopic.php?t=1139590
 Bottle -> Import bottle archive
 ```
 
-#### 21. Install Atom
+#### 22. Install Atom
 ```
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update && sudo apt install atom
