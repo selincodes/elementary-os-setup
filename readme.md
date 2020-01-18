@@ -163,12 +163,9 @@ sudo npm install --global gulp
 sudo apt install qbittorrent
 ```
 
-#### 18. Install MS Fonts
+#### 18. Install Tahoma fonts
 ```
-sudo apt install ttf-mscorefonts-installer
-cd /tmp && wget http://www.stchman.com/tools/MS_fonts/tahoma.zip
-sudo unzip -d /usr/share/fonts/truetype/msttcorefonts /tmp/tahoma.zip
-fc-cache -fv
+wget https://gist.githubusercontent.com/maxwelleite/913b6775e4e408daa904566eb375b090/raw/ttf-ms-tahoma-installer.sh -q -O - | sudo bash
 ```
 
 #### 19. Install Viber and Telegram
