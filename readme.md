@@ -15,9 +15,10 @@ sudo software-properties-gtk
 #### 3. Install TP-Link driver
 ```
 sudo apt install git dkms
-git clone https://github.com/jeremyb31/rtl8812au-1.git
-cd rtl8812au-1
+git clone -b v5.6.4.2 https://github.com/aircrack-ng/rtl8812au.git
+cd rtl*
 sudo ./dkms-install.sh
+sudo service NetworkManager restart
 ```
 
 #### 4. Install elementary Tweaks
